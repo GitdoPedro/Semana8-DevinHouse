@@ -1,6 +1,12 @@
 <ntap-header></ntap-header>
 
 <main>
-
+<ul>
+    <li *ngFor="let notificacao of notificacoes">
+        {{notificacao.titulo}}
+        <p><small>{{notificacao.subtitulo}}</small></p>
+        <p>{{notificacao.data}}</p>
+    </li>
+</ul>
 </main>
 <ntap-footer></ntap-footer>
